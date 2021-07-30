@@ -518,7 +518,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -540,6 +542,12 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
+}
+
 .features__desc {
   font-size: 14px;
   line-height: 1.71;
@@ -552,8 +560,29 @@ body {
   margin-top: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+
 .features__list {
   margin-top: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .about {
