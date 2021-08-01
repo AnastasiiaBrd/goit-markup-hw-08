@@ -21,7 +21,7 @@
   </head>
   <body>
     <!--Header-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <a class="header__logo logo link" href="/"
           ><span class="logo__web">Web</span>Studio</a
@@ -39,6 +39,11 @@
             </li>
           </ul>
         </nav>
+        <button class="burger-btn">
+          <svg class="burger-btn__icon">
+            <use href="./images/symbol-defs.svg#icon-burger-btn"></use>
+          </svg>
+        </button>
         <ul class="header__contacts list">
           <li class="header__contacts-item">
             <a class="contacts__link link" href="/info@devstudio.com">
@@ -58,7 +63,53 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="mobile-menu">
+        <div class="container mobile-menu__container">
+        <button class="close-btn mobile-menu__close-btn">
+          <svg class="close-btn__icon">
+            <use href="./images/symbol-defs.svg#icon-vector"></use>
+          </svg>
+        </button>
+        <ul class="nav-list list">
+          <li class="nav-list__item">
+            <a href="./studio.html" class="nav-list__link link">Студия</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="./portfolio.html" class="nav-list__link link">Портфолио</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="/Контакты" class="nav-list__link link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a href="/+380961111111" class="mobile-contacts__link-tel link">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a href="/info@devstudio.com" class="mobile-contacts__link-mail link">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-social list">
+          <li class="mobile-social__item">
+            <a href="/Instagram" class="mobile-social__link link">Instagram
+            </a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="/Twitter" class="mobile-social__link link">Twitter
+            </a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="/Facebook" class="mobile-social__link link">Facebook
+            </a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="/LinkedIn" class="mobile-social__link link">LinkedIn
+            </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <!--Hero-->
       <section class="hero">
