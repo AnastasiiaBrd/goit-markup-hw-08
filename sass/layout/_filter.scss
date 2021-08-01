@@ -1,3 +1,18 @@
+.filter__list {
+  margin: 0 auto 40px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and(min-width: 768px) {
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and(min-width: 1200px) {
+    margin: 0 auto 50px;
+  }
+}
 .filter-button {
   font-weight: 500;
   font-size: 16px;
@@ -27,12 +42,11 @@
   }
 }
 
-.filter__list {
-  margin: 0 auto 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .filter__item:not(:last-child) {
+  margin-bottom: 15px;
   margin-right: 8px;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
