@@ -39,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        <button class="burger-btn">
+        <button class="burger-btn" data-menu-open>
           <svg class="burger-btn__icon">
             <use href="./images/symbol-defs.svg#icon-burger-btn"></use>
           </svg>
@@ -63,9 +63,9 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu is-open>
         <div class="container mobile-menu__container">
-        <button class="close-btn mobile-menu__close-btn">
+        <button class="close-btn mobile-menu__close-btn" data-menu-close>
           <svg class="close-btn__icon">
             <use href="./images/symbol-defs.svg#icon-vector"></use>
           </svg>
@@ -81,6 +81,7 @@
             <a href="/Контакты" class="nav-list__link link">Контакты</a>
           </li>
         </ul>
+        <div class="mobile-box">
         <ul class="mobile-contacts list">
           <li class="mobile-contacts__item">
             <a href="/+380961111111" class="mobile-contacts__link-tel link">+38 096 111 11 11</a>
@@ -107,6 +108,7 @@
             </a>
           </li>
         </ul>
+        </div>
         </div>
       </div>
     </header>
@@ -756,5 +758,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
