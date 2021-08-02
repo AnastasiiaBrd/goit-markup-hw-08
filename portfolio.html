@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--Верхняя линия-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <a class="header__logo logo link" href="/"
           ><span class="logo__web">Web</span>Studio</a
@@ -29,16 +28,21 @@
         <nav class="navigation">
           <ul class="menu__list list">
             <li class="menu__item">
-              <a class="menu__link link" href="./index.html">Студия</a>
+              <a class="menu__link link current" href="./studio.html">Студия</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link link current" href="/Портфолио">Портфолио</a>
+              <a class="menu__link link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="/Контакты">Контакты</a>
             </li>
           </ul>
         </nav>
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-btn__icon">
+            <use href="./images/symbol-defs.svg#icon-burger-btn"></use>
+          </svg>
+        </button>
         <ul class="header__contacts list">
           <li class="header__contacts-item">
             <a class="contacts__link link" href="/info@devstudio.com">
@@ -58,7 +62,55 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="mobile-menu" data-menu is-open>
+        <div class="container mobile-menu__container">
+        <button class="close-btn mobile-menu__close-btn" data-menu-close>
+          <svg class="close-btn__icon">
+            <use href="./images/symbol-defs.svg#icon-vector"></use>
+          </svg>
+        </button>
+        <ul class="nav-list list">
+          <li class="nav-list__item">
+            <a href="./studio.html" class="nav-list__link link">Студия</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="./portfolio.html" class="nav-list__link link">Портфолио</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="/Контакты" class="nav-list__link link">Контакты</a>
+          </li>
+        </ul>
+        <div class="mobile-box">
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a href="/+380961111111" class="mobile-contacts__link-tel link">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a href="/info@devstudio.com" class="mobile-contacts__link-mail link">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-social list">
+          <li class="mobile-social__item">
+            <a href="/Instagram" class="mobile-social__link link">Instagram
+            </a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="/Twitter" class="mobile-social__link link">Twitter
+            </a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="/Facebook" class="mobile-social__link link">Facebook
+            </a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="/LinkedIn" class="mobile-social__link link">LinkedIn
+            </a>
+          </li>
+        </ul>
+        </div>
+        </div>
+      </div>
+    </header>
     <main>
       <!--Портфолио-->
       <section class="section">
@@ -118,14 +170,14 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio1-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio1-mob-2x.jpg 2x
                       "
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio1-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio1-mob-2x.jpg 2x
@@ -181,14 +233,14 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio2-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio2-mob-2x.jpg 2x
                       "
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio2-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio2-mob-2x.jpg 2x
@@ -246,14 +298,14 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio3-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio3-mob-2x.jpg 2x
                       "
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio3-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio3-mob-2x.jpg 2x
@@ -311,14 +363,14 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio4-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio4-mob-2x.jpg 2x
                       "
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio4-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio4-mob-2x.jpg 2x
@@ -376,14 +428,14 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio5-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio5-mob-2x.jpg 2x
                       "
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio5-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio5-mob-2x.jpg 2x
@@ -441,14 +493,14 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio6-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio6-mob-2x.jpg 2x
                       "
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio6-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio6-mob-2x.jpg 2x
@@ -506,14 +558,14 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio7-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio7-mob-2x.jpg 2x
                       "
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio7-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio7-mob-2x.jpg 2x
@@ -571,14 +623,14 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio8-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio8-mob-2x.jpg 2x
                       "
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio8-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio8-mob-2x.jpg 2x
@@ -636,14 +688,14 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio9-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio9-mob-2x.jpg 2x
                       "
                     />
                     <source
-                      media="(min-width: 480px)"
+                      media="(min-width: 280px)"
                       srcset="
                         ./images/portfolio-img/portfolio9-mob-1x.jpg 1x,
                         ./images/portfolio-img/portfolio9-mob-2x.jpg 2x
