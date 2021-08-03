@@ -545,12 +545,12 @@ body {
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 768px) {
   .header {
     padding: 25px 0;
-    border-bottom: 1px solid #ececec;
   }
 }
 
@@ -596,15 +596,6 @@ body {
   padding: 48px 40px;
 }
 
-.close-btn {
-  width: 18px;
-  height: 18px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-}
-
 .close-btn__icon {
   width: 18px;
   height: 18px;
@@ -619,6 +610,12 @@ body {
   position: absolute;
   top: 21px;
   right: 25px;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
 }
 
 .nav-list__link {
