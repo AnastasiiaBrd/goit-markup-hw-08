@@ -1,16 +1,18 @@
 .filter__list {
-  margin: 0 auto 40px;
+  margin-bottom: 40px;
+  margin-top: -15px;
+  margin-right: -8px;
   display: flex;
   flex-wrap: wrap;
 
   @media screen and(min-width: 768px) {
-    margin: 0 auto 30px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   @media screen and(min-width: 1200px) {
-    margin: 0 auto 50px;
+    margin-bottom: 50px;
   }
 }
 .filter-button {
@@ -41,12 +43,12 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
-
-.filter__item:not(:last-child) {
-  margin-bottom: 15px;
-  margin-right: 8px;
-
-  @media screen and(min-width: 768px) {
-    margin-bottom: 0;
+@media screen and (max-width: 767px) {
+  .filter__item {
+    margin-top: 15px;
+    margin-right: 8px;
   }
+}
+.filter__item:not(:last-child) {
+  margin-right: 8px;
 }
